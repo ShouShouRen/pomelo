@@ -189,49 +189,11 @@ main {
     @media (max-width:992px) {
         padding-top: 0px;
     }
-
-    .row {
-        margin-top: 65px;
-        transition: all .3s ease;
-        border-radius: 1.5em;
-        box-shadow: 4px 4px 10px #9c9c9c;
-        overflow: hidden;
-        margin: 30px;
-        transition: all .3s ease;
-    }
-
-    .row:hover {
-        transform: scale(1.1);
-
-        @media (max-width: 1200px) {
-            transform: scale(1.0);
-        }
-    }
-
-    .title {
-        font-size: 38px;
-    }
-
-    .year {
-        font-size: 12px;
-    }
-
-    .day {
-        font-size: 40px;
-        line-height: 1.5;
-        color: #333;
-    }
-
-    .date {
-        border-left: 4px solid #ccc;
-        padding-left: 20px;
-        height: 100%;
-    }
-
-    @media(max-width: 768px) {
-        .date {
-            border: none;
-        }
+    line-height: 38px;
+    font-size: 18px;
+    .card{
+        box-shadow: -10px -10px 25px #4B5D67;
+        color: #4B5D67;
     }
 }
 #service{

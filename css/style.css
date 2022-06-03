@@ -146,53 +146,18 @@ main {
 #product.hero {
   position: relative;
   padding-top: 80px;
+  line-height: 38px;
+  font-size: 18px;
 }
 @media (max-width: 992px) {
   #product.hero {
     padding-top: 0px;
   }
 }
-#product.hero .row {
-  margin-top: 65px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  border-radius: 1.5em;
-  -webkit-box-shadow: 4px 4px 10px #9c9c9c;
-          box-shadow: 4px 4px 10px #9c9c9c;
-  overflow: hidden;
-  margin: 30px;
-  transition: all 0.3s ease;
-}
-#product.hero .row:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-@media (max-width: 1200px) {
-  #product.hero .row:hover {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-#product.hero .title {
-  font-size: 38px;
-}
-#product.hero .year {
-  font-size: 12px;
-}
-#product.hero .day {
-  font-size: 40px;
-  line-height: 1.5;
-  color: #333;
-}
-#product.hero .date {
-  border-left: 4px solid #ccc;
-  padding-left: 20px;
-  height: 100%;
-}
-@media (max-width: 768px) {
-  #product.hero .date {
-    border: none;
-  }
+#product.hero .card {
+  -webkit-box-shadow: -10px -10px 25px #4B5D67;
+          box-shadow: -10px -10px 25px #4B5D67;
+  color: #4B5D67;
 }
 
 #service .title {
