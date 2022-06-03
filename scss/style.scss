@@ -1,3 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 img {
     width: 100%;
 }
@@ -14,6 +28,43 @@ img {
         padding-top: 60px;
         padding-bottom: 60px;
     }
+}
+
+
+.bttn {
+    border-radius: 8px;
+    border-color: #809A6F;
+    background: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    overflow: hidden;
+    color: #000;
+    position: relative;
+    outline: none;
+    font-weight: bold;
+}
+
+.bttn:hover {
+    color: #fff6f6;
+}
+
+.bttn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #809A6F;
+    z-index: -1;
+    transition: 0.8s;
+    border-radius: 0 0 50% 50%;
+
+}
+
+.bttn:hover::before {
+    height: 100%;
 }
 
 // cpt
@@ -64,6 +115,9 @@ main {
 }
 
 #about {
+    background-image: url("../images/wave\ top.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     position: relative;
 
     img {
@@ -79,7 +133,7 @@ main {
         letter-spacing: 6px;
         text-align: left;
         font-size: 20px;
-        color: #9e9e9e;
+        color: #777676;
         line-height: 48px;
         text-indent: 2em;
 
@@ -88,7 +142,6 @@ main {
             letter-spacing: 4px;
             text-align: center;
             font-size: 16px;
-            color: #9e9e9e;
             line-height: 32px;
             text-indent: 2em;
         }
@@ -99,13 +152,14 @@ main {
         display: block;
         border-radius: 50%;
         position: absolute;
-        top: 120px;
-        left: -200px;
+        bottom: -320px;
+        left: -123px;
         width: 300px;
         height: 300px;
-        background-color: #06ff3044;
-        z-index: -1;
-        overflow: hidden;
+        background-color: #0085166c;
+        @media (max-width: 1600px) {
+            display: none;
+        }
     }
 
     &::after {
@@ -113,21 +167,74 @@ main {
         display: block;
         border-radius: 50%;
         position: absolute;
-        bottom: -120px;
-        right: -174px;
+        top: 320px;
+        right: -89px;
         width: 250px;
         height: 250px;
         background-color: #73507783;
         z-index: -1;
+        @media (max-width: 1600px) {
+            display: none;
+        }
     }
 }
 
 #product.hero {
     padding-top: 80px;
+
     @media (max-width:992px) {
         padding-top: 0px;
     }
+
+    .row {
+        margin-top: 65px;
+        transition: all .3s ease;
+        border-radius: 1.5em;
+        box-shadow: 4px 4px 10px #9c9c9c;
+        overflow: hidden;
+        margin: 30px;
+        transition: all .3s ease;
+    }
+
+    .row:hover {
+        transform: scale(1.1);
+
+        @media (max-width: 1200px) {
+            transform: scale(1.0);
+        }
+    }
+
     .title {
+        font-size: 38px;
+    }
+
+    .year {
+        font-size: 12px;
+    }
+
+    .day {
+        font-size: 40px;
+        line-height: 1.5;
+        color: #333;
+    }
+
+    .date {
+        border-left: 4px solid #ccc;
+        padding-left: 20px;
+        height: 100%;
+    }
+
+    @media(max-width: 768px) {
+        .date {
+            border: none;
+        }
+    }
+}
+#service{
+    background-image: url("../images/wave.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    .title{
         font-size: 38px;
     }
 }
