@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>柚出荖阡</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -97,7 +97,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 p-4">
                     <h4 class="p-2 fw-bolder text-success">有機文旦</h4>
                     <p class="p-2">郭老闆親自把關</p>
-                    <button class="bttn">搶先預約</button>
+                    <a class="bttn" href="">搶先預約</a>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 my-auto date">
                     <div class="year">2022 / 01</div>
@@ -111,7 +111,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 p-4">
                     <h4 class="p-2 fw-bolder text-success">紅文旦</h4>
                     <p class="p-2">郭老闆親自把關</p>
-                    <button class="bttn">搶先預約</button>
+                    <a class="bttn" href="https://google.com">搶先預約</a>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 my-auto date">
                     <div class="year">2022 / 02</div>
@@ -121,13 +121,83 @@
         </section>
         <section id="service" class="hero">
             <div class="container">
-                <h2 class="title fw-bold">服務中心</h2>
-
+                <div class="col-12">
+                    <h2 class="title fw-bold">服務中心</h2>
+                </div>
+                <div class="row mt-5 g-4">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <a href="https://www.facebook.com/%E6%9F%9A%E5%87%BA%E8%8D%96%E9%98%A1-105034665378276/"
+                            target="new">
+                            <img src="./images/fb.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <a href="https://www.instagram.com/pomelo20211218/" target="new">
+                            <img src="./images/ig.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <a href="https://linevoom.line.me/user/_dZL9stKT1ZjzHiyYFRsXrOovpzwYVGM_cSyRQhk?utm_medium=windows&utm_source=desktop&utm_campaign=OA_Profile"
+                            target="new">
+                            <img src="./images/line.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <a href="https://linevoom.line.me/user/_dZL9stKT1ZjzHiyYFRsXrOovpzwYVGM_cSyRQhk?utm_medium=windows&utm_source=desktop&utm_campaign=OA_Profile"
+                            target="new">
+                            <img src="./images/shopee.png" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
+        <section id="contact" class="container hero">
+            <h2 class="title fw-bold text-center mb-4">聯絡我們</h2>
+            <p class="text-center">我們位於249新北市八里區華峰一街69號
+            <p>
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14446.776849911348!2d121.3982466!3d25.146027!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4b6eb00e5aa522c5!2z5p-a5Ye66I2W6Zih!5e0!3m2!1szh-TW!2stw!4v1654255811161!5m2!1szh-TW!2stw"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <footer class="text-center p-4 bg-secondary text-white">
+            八里柚出荖阡 &copy;
+        </footer>
+        <!-- Messenger 洽談外掛程式 Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your 洽談外掛程式 code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+
     </main>
 
 </body>
 <script src="./js/bootstrap.min.js"></script>
+        <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "105034665378276");
+            chatbox.setAttribute("attribution", "biz_inbox");
+        </script>
+
+        <!-- Your SDK code -->
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    xfbml: true,
+                    version: 'v14.0'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
 
 </html>

@@ -44,6 +44,7 @@ img {
   position: relative;
   outline: none;
   font-weight: bold;
+  border: 1px solid #000;
 }
 
 .bttn:hover {
@@ -229,10 +230,15 @@ main {
 }
 
 #service {
-  background-image: url("../images/wave.png");
+  background-image: url("../images/wave bot.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 #service .title {
+  font-size: 38px;
+  text-align: right;
+}
+
+#contact .title {
   font-size: 38px;
 }
