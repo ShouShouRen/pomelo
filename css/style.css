@@ -2,6 +2,17 @@
   background-color: #BDF2D5;
 }
 
+.hero {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
 .navbar .navbar-brand img {
   width: 70px;
   height: 70px;
@@ -14,4 +25,13 @@
   font-size: 20px;
   font-weight: 800;
   color: #4B5D67;
+}
+.navbar ul li a::after {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+}
+
+.carousel {
+  padding-top: 70px;
 }
