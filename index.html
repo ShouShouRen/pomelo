@@ -204,11 +204,11 @@
     $(window).scroll(function () {
         //小螢幕下的導航條摺疊
         if ($(window).width() < 768) {
-            $("#navbarNav a").click(function () {
-                $("#navbarNav").collapse('hide');
+            $("#navbarSupportedContent a").click(function () {
+                $("#navbarSupportedContent").collapse('hide');
             });
             $(window).scroll(function () {
-                $("#navbarNav").collapse('hide');
+                $("#navbarSupportedContent").collapse('hide');
             });
         }
     });
