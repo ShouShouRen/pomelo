@@ -69,9 +69,11 @@ img {
   height: 100%;
 }
 
-.navbar .navbar-brand img {
+.navbar .navbar-brand {
   width: 70px;
   height: 70px;
+  background-image: url(../images/Pomelo.png);
+  background-size: contain;
 }
 .navbar .nav-item {
   margin-left: 8px;
