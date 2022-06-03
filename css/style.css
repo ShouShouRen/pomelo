@@ -1,0 +1,17 @@
+.bg-theme-color {
+  background-color: #BDF2D5;
+}
+
+.navbar .navbar-brand img {
+  width: 70px;
+  height: 70px;
+}
+.navbar .nav-item {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.navbar ul li a {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fefeff;
+}
