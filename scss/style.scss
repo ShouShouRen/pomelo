@@ -123,9 +123,6 @@ main {
 }
 
 #about {
-    // background-image: url("../images/wave\ top.png");
-    // background-repeat: no-repeat;
-    // background-size: 100% 100%;
     position: relative;
 
     img {
@@ -186,4 +183,11 @@ main {
     .title {
         font-size: 38px;
     }
+}
+
+.price{
+    font-size: 20px;
+    color: #ff7373;
+    font-weight: 800;
+    text-align: center;
 }
