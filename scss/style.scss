@@ -185,9 +185,32 @@ main {
     }
 }
 
-.price{
+.price {
     font-size: 20px;
     color: #ff7373;
     font-weight: 800;
     text-align: center;
+}
+
+.gotop {
+    cursor: pointer;
+    user-select: none;
+    background-color: #fa0;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: grid;
+    place-items: center;
+    font-size: 1.6em;
+    color: #fff;
+    font-weight: 800;
+    transform: translateX(200%);
+    transition: 600ms;
+
+    &.active {
+        transform: translateX(0%);
+    }
 }

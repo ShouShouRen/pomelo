@@ -8,6 +8,7 @@
     <title>柚出荖阡</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR8NVW69KJ"></script>
     <script>
@@ -234,7 +235,9 @@
 
         </main>
     </div>
-
+    <div class="gotop">
+        TOP
+    </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
@@ -263,11 +266,27 @@
     }(document, 'script', 'facebook-jssdk'));
 </script>
 <script>
-    $(window).scroll(function () {
+    $(document).ready(function () {
         $(window).scroll(function () {
-            $("#navtoggle").collapse('hide');
+            $(window).scroll(function () {
+                $("#navtoggle").collapse('hide');
+            });
         });
-    });
+        $('.gotop').click(function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 600)
+        })
+        $(window).scroll(function () {
+            let h = $(window).scrollTop();
+            if (h > 650) {
+                $('.gotop').addClass('active');
+            } else {
+                $('.gotop').removeClass('active');
+            }
+        })
+    })
 </script>
 <script>
     Vue.createApp({
